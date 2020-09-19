@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:ns0="http://www.mydomain.org/uni-ns#">
+
+  <rdf:Description rdf:about="http://njh.me/maestria">
+    <ns0:tieneLinea>
+      <rdf:Description rdf:about="http://njh.me/linea1">
+        <ns0:name>Tecnologias de software</ns0:name>
+        <ns0:especialidad rdf:resource="http://njh.me/area1"/>
+        <ns0:especialidad rdf:resource="http://njh.me/area4"/>
+      </rdf:Description>
+    </ns0:tieneLinea>
+
+    <ns0:tieneLinea>
+      <rdf:Description rdf:about="http://njh.me/linea2">
+        <ns0:name>Aplicacion de ciencias e ingenieria</ns0:name>
+        <ns0:especialidad rdf:resource="http://njh.me/area2"/>
+        <ns0:especialidad rdf:resource="http://njh.me/area3"/>
+      </rdf:Description>
+    </ns0:tieneLinea>
+
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://njh.me/area1">
+    <ns0:name>Base de Datos y recuperación de la información</ns0:name>
+    <ns0:sonMiembros rdf:resource="http://njh.me/profe2"/>
+    <ns0:sonMiembros rdf:resource="http://njh.me/profe3"/>
+    <ns0:sonMiembros rdf:resource="http://njh.me/profe8"/>
+    <ns0:sonMiembros rdf:resource="http://njh.me/profe9"/>
+    <ns0:sonMiembros rdf:resource="http://njh.me/profe10"/>
+    <ns0:sonMiembros rdf:resource="http://njh.me/216470441"/>
+    <ns0:sonMiembros rdf:resource="http://njh.me/216470444"/>
+    <ns0:sonMiembros rdf:resource="http://njh.me/216470446"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://njh.me/area2">
+    <ns0:name>Computo matemático</ns0:name>
+    <ns0:sonMiembros rdf:resource="http://njh.me/profe1"/>
+    <ns0:sonMiembros rdf:resource="http://njh.me/profe6"/>
+    <ns0:sonMiembros rdf:resource="http://njh.me/profe7"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://njh.me/area3">
+    <ns0:name>Sistemas Inteligentes</ns0:name>
+    <ns0:sonMiembros rdf:resource="http://njh.me/216470447"/>
+    <ns0:sonMiembros rdf:resource="http://njh.me/216470442"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://njh.me/area4">
+    <ns0:name>Sistemas distribuidos</ns0:name>
+    <ns0:sonMiembros rdf:resource="http://njh.me/profe4"/>
+    <ns0:sonMiembros rdf:resource="http://njh.me/profe5"/>
+    <ns0:sonMiembros rdf:resource="http://njh.me/216470445"/>
+    <ns0:sonMiembros rdf:resource="http://njh.me/216470443"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://njh.me/profe1">
+    <ns0:name>Pedro Garcia</ns0:name>
+    <ns0:title>Doctor</ns0:title>
+    <ns0:area rdf:resource="http://njh.me/area2"/>
+    <ns0:coursesTaught>
+      <rdf:Description rdf:about="http://njh.me/prope1">
+        <ns0:isTaughtBy rdf:resource="http://njh.me/profe1"/>
+        <ns0:title>Matematicas Discretas</ns0:title>
+        <ns0:año rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2016</ns0:año>
+        <ns0:periodo>Primavera</ns0:periodo>
+        <ns0:alumno rdf:resource="http://njh.me/216470441"/>
+        <ns0:alumno rdf:resource="http://njh.me/216470442"/>
+        <ns0:alumno rdf:resource="http://njh.me/216470443"/>
+        <ns0:alumno rdf:resource="http://njh.me/216470444"/>
+        <ns0:alumno rdf:resource="http://njh.me/216470445"/>
+        <ns0:alumno rdf:resource="http://njh.me/216470446"/>
+        <ns0:alumno rdf:resource="http://njh.me/216470447"/>
+      </rdf:Description>
+    </ns0:coursesTaught>
+
+    <ns0:coursesTaught>
+      <rdf:Description rdf:about="http://njh.me/otoño2">
+        <ns0:isTaughtBy rdf:resource="http://njh.me/profe1"/>
+        <ns0:title>Matematicas Discretas</ns0:title>
+        <ns0:año rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2016</ns0:año>
+        <ns0:periodo>Otoño</ns0:periodo>
+        <ns0:alumno rdf:resource="http://njh.me/216470441"/>
+        <ns0:alumno rdf:resource="http://njh.me/216470442"/>
+        <ns0:alumno rdf:resource="http://njh.me/216470443"/>
+        <ns0:alumno rdf:resource="http://njh.me/216470444"/>
+        <ns0:alumno rdf:resource="http://njh.me/216470445"/>
+        <ns0:alumno rdf:resource="http://njh.me/216470446"/>
+        <ns0:alumno rdf:resource="http://njh.me/216470447"/>
+      </rdf:Description>
+    </ns0:coursesTaught>
+
+    <ns0:contrato rdf:resource="http://njh.me/personal_docente"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://njh.me/profe2">
+    <ns0:name>Mireya Tovar</ns0:name>
+    <ns0:title>Doctor</ns0:title>
+    <ns0:area rdf:resource="http://njh.me/area1"/>
+    <ns0:coursesTaught>
+      <rdf:Description rdf:about="http://njh.me/primavera3">
+        <ns0:isTaughtBy rdf:resource="http://njh.me/profe2"/>
+        <ns0:title>Ontologías</ns0:title>
+        <ns0:año rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2017</ns0:año>
+        <ns0:periodo>Primavera</ns0:periodo>
+        <ns0:alumno rdf:resource="http://njh.me/216470444"/>
+        <ns0:alumno rdf:resource="http://njh.me/216470446"/>
+      </rdf:Description>
+    </ns0:coursesTaught>
+
+    <ns0:coursesTaught>
+      <rdf:Description rdf:about="http://njh.me/otoño1">
+        <ns0:isTaughtBy rdf:resource="http://njh.me/profe2"/>
+        <ns0:title>Lenguajes formales</ns0:title>
+        <ns0:año rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2016</ns0:año>
+        <ns0:periodo>Otoño</ns0:periodo>
+        <ns0:alumno rdf:resource="http://njh.me/216470441"/>
+        <ns0:alumno rdf:resource="http://njh.me/216470442"/>
+        <ns0:alumno rdf:resource="http://njh.me/216470443"/>
+        <ns0:alumno rdf:resource="http://njh.me/216470444"/>
+        <ns0:alumno rdf:resource="http://njh.me/216470445"/>
+        <ns0:alumno rdf:resource="http://njh.me/216470446"/>
+        <ns0:alumno rdf:resource="http://njh.me/216470447"/>
+      </rdf:Description>
+    </ns0:coursesTaught>
+
+    <ns0:contrato rdf:resource="http://njh.me/personal_docente"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://njh.me/profe3">
+    <ns0:name>Darnes Vilariño</ns0:name>
+    <ns0:title>Doctor</ns0:title>
+    <ns0:area rdf:resource="http://njh.me/area1"/>
+    <ns0:coursesTaught>
+      <rdf:Description rdf:about="http://njh.me/primavera4">
+        <ns0:isTaughtBy rdf:resource="http://njh.me/profe3"/>
+        <ns0:title>Recuperación de la información con grafos</ns0:title>
+        <ns0:horas rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</ns0:horas>
+        <ns0:periodo>Primavera</ns0:periodo>
+        <ns0:alumno rdf:resource="http://njh.me/216470441"/>
+        <ns0:alumno rdf:resource="http://njh.me/216470444"/>
+        <ns0:alumno rdf:resource="http://njh.me/216470446"/>
+      </rdf:Description>
+    </ns0:coursesTaught>
+
+    <ns0:contrato rdf:resource="http://njh.me/personal_docente"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://njh.me/profe4">
+    <ns0:name>Claudia Zepeda</ns0:name>
+    <ns0:title>Doctor</ns0:title>
+    <ns0:area rdf:resource="http://njh.me/area4"/>
+    <ns0:coursesTaught rdf:resource="http://njh.me/prope4"/>
+    <ns0:contrato rdf:resource="http://njh.me/personal_docente"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://njh.me/profe5">
+    <ns0:name>Hilda Castillo</ns0:name>
+    <ns0:title>Doctor</ns0:title>
+    <ns0:area rdf:resource="http://njh.me/area4"/>
+    <ns0:coursesTaught>
+      <rdf:Description rdf:about="http://njh.me/prope2">
+        <ns0:isTaughtBy rdf:resource="http://njh.me/profe5"/>
+        <ns0:title>Programación</ns0:title>
+        <ns0:año rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2016</ns0:año>
+        <ns0:periodo>Primavera</ns0:periodo>
+        <ns0:alumno rdf:resource="http://njh.me/216470441"/>
+        <ns0:alumno rdf:resource="http://njh.me/216470442"/>
+        <ns0:alumno rdf:resource="http://njh.me/216470443"/>
+        <ns0:alumno rdf:resource="http://njh.me/216470444"/>
+        <ns0:alumno rdf:resource="http://njh.me/216470445"/>
+        <ns0:alumno rdf:resource="http://njh.me/216470446"/>
+        <ns0:alumno rdf:resource="http://njh.me/216470447"/>
+      </rdf:Description>
+    </ns0:coursesTaught>
+
+    <ns0:contrato rdf:resource="http://njh.me/personal_docente"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://njh.me/profe6">
+    <ns0:name>Lourdes Sandoval</ns0:name>
+    <ns0:title>Doctor</ns0:title>
+    <ns0:area rdf:resource="http://njh.me/area2"/>
+    <ns0:coursesTaught>
+      <rdf:Description rdf:about="http://njh.me/otoño3">
+        <ns0:isTaughtBy rdf:resource="http://njh.me/profe6"/>
+        <ns0:title>Analisis y diseño de algoritmos</ns0:title>
+        <ns0:año rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2016</ns0:año>
+        <ns0:periodo>Otoño</ns0:periodo>
+        <ns0:alumno rdf:resource="http://njh.me/216470441"/>
+        <ns0:alumno rdf:resource="http://njh.me/216470442"/>
+        <ns0:alumno rdf:resource="http://njh.me/216470443"/>
+        <ns0:alumno rdf:resource="http://njh.me/216470444"/>
+        <ns0:alumno rdf:resource="http://njh.me/216470445"/>
+        <ns0:alumno rdf:resource="http://njh.me/216470446"/>
+        <ns0:alumno rdf:resource="http://njh.me/216470447"/>
+      </rdf:Description>
+    </ns0:coursesTaught>
+
+    <ns0:contrato rdf:resource="http://njh.me/personal_docente"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://njh.me/profe7">
+    <ns0:name>Abraham Sanchez</ns0:name>
+    <ns0:title>Doctor</ns0:title>
+    <ns0:area rdf:resource="http://njh.me/area2"/>
+    <ns0:coursesTaught rdf:resource="http://njh.me/prope4"/>
+    <ns0:contrato rdf:resource="http://njh.me/personal_docente"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://njh.me/profe8">
+    <ns0:name>David Pinto</ns0:name>
+    <ns0:title>Doctor</ns0:title>
+    <ns0:area rdf:resource="http://njh.me/area1"/>
+    <ns0:coursesTaught>
+      <rdf:Description rdf:about="http://njh.me/primavera1">
+        <ns0:isTaughtBy rdf:resource="http://njh.me/profe8"/>
+        <ns0:title>Recuperación de la información</ns0:title>
+        <ns0:año rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2017</ns0:año>
+        <ns0:periodo>Primavera</ns0:periodo>
+        <ns0:alumno rdf:resource="http://njh.me/216470441"/>
+        <ns0:alumno rdf:resource="http://njh.me/216470444"/>
+        <ns0:alumno rdf:resource="http://njh.me/216470446"/>
+      </rdf:Description>
+    </ns0:coursesTaught>
+
+    <ns0:contrato rdf:resource="http://njh.me/personal_docente"/>
+    <ns0:contrato rdf:resource="http://njh.me/personal_admin"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://njh.me/profe9">
+    <ns0:name>Josefa Somodevilla</ns0:name>
+    <ns0:title>Doctor</ns0:title>
+    <ns0:area rdf:resource="http://njh.me/area1"/>
+    <ns0:coursesTaught>
+      <rdf:Description rdf:about="http://njh.me/primavera2">
+        <ns0:isTaughtBy rdf:resource="http://njh.me/profe9"/>
+        <ns0:title>Minería de datos</ns0:title>
+        <ns0:año rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2017</ns0:año>
+        <ns0:periodo>Primavera</ns0:periodo>
+        <ns0:alumno rdf:resource="http://njh.me/216470441"/>
+        <ns0:alumno rdf:resource="http://njh.me/216470444"/>
+        <ns0:alumno rdf:resource="http://njh.me/216470446"/>
+      </rdf:Description>
+    </ns0:coursesTaught>
+
+    <ns0:contrato rdf:resource="http://njh.me/personal_docente"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://njh.me/profe10">
+    <ns0:name>Concepción Pérez de Celis</ns0:name>
+    <ns0:title>Doctor</ns0:title>
+    <ns0:area rdf:resource="http://njh.me/area1"/>
+    <ns0:coursesTaught>
+      <rdf:Description rdf:about="http://njh.me/otoño4">
+        <ns0:isTaughtBy rdf:resource="http://njh.me/profe10"/>
+        <ns0:title>Tratamiento de la información</ns0:title>
+        <ns0:año rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2016</ns0:año>
+        <ns0:periodo>Otoño</ns0:periodo>
+        <ns0:alumno rdf:resource="http://njh.me/216470441"/>
+        <ns0:alumno rdf:resource="http://njh.me/216470444"/>
+        <ns0:alumno rdf:resource="http://njh.me/216470446"/>
+      </rdf:Description>
+    </ns0:coursesTaught>
+
+    <ns0:contrato rdf:resource="http://njh.me/personal_docente"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://njh.me/216470444">
+    <ns0:name>Cecilia Reyes</ns0:name>
+    <ns0:title>Ing. en sistemas computacionales</ns0:title>
+    <ns0:area rdf:resource="http://njh.me/area1"/>
+    <ns0:mail>reyesp.cecilia@gmail.com</ns0:mail>
+    <ns0:edad rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">25</ns0:edad>
+    <ns0:generacion rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2016</ns0:generacion>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://njh.me/216470446">
+    <ns0:name>Sthephanie Vazquez</ns0:name>
+    <ns0:title>Lic. en ciencias de la computación</ns0:title>
+    <ns0:area rdf:resource="http://njh.me/area1"/>
+    <ns0:mail>sthephanie_vazquez@gmail.com</ns0:mail>
+    <ns0:edad rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">39</ns0:edad>
+    <ns0:generacion rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2016</ns0:generacion>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://njh.me/216470445">
+    <ns0:name>Daniel Sánchez</ns0:name>
+    <ns0:title>Ing. en computación</ns0:title>
+    <ns0:area rdf:resource="http://njh.me/area4"/>
+    <ns0:mail>dan_sanchez89@gmail.com</ns0:mail>
+    <ns0:edad rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">28</ns0:edad>
+    <ns0:generacion rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2016</ns0:generacion>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://njh.me/216470447">
+    <ns0:name>Rodolfo Ricaño</ns0:name>
+    <ns0:title>Ing. en computación</ns0:title>
+    <ns0:area rdf:resource="http://njh.me/area3"/>
+    <ns0:mail>neah.walker@gmail.com</ns0:mail>
+    <ns0:edad rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">29</ns0:edad>
+    <ns0:generacion rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2016</ns0:generacion>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://njh.me/216470443">
+    <ns0:name>Iovanny Olguin</ns0:name>
+    <ns0:title>Ing. en sistemas computacionales</ns0:title>
+    <ns0:area rdf:resource="http://njh.me/area4"/>
+    <ns0:mail>psy_clo@gmail.com</ns0:mail>
+    <ns0:edad rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">31</ns0:edad>
+    <ns0:generacion rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2016</ns0:generacion>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://njh.me/216470441">
+    <ns0:name>Rodolfo Martinez</ns0:name>
+    <ns0:title>Lic. en ciencias de la computación</ns0:title>
+    <ns0:area rdf:resource="http://njh.me/area1"/>
+    <ns0:mail>bethoo@gmail.com</ns0:mail>
+    <ns0:edad rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">34</ns0:edad>
+    <ns0:generacion rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2016</ns0:generacion>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://njh.me/216470442">
+    <ns0:name>Alfredo Neri</ns0:name>
+    <ns0:title>Ing. en ciencias de la computación</ns0:title>
+    <ns0:area rdf:resource="http://njh.me/area3"/>
+    <ns0:mail>alfredo.rojasneri@gmail.com</ns0:mail>
+    <ns0:edad rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">29</ns0:edad>
+    <ns0:generacion rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2016</ns0:generacion>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://njh.me/prope3">
+    <ns0:isTaughtBy rdf:resource="http://njh.me/profe7"/>
+    <ns0:title>Analisis y diseño de algoritmos</ns0:title>
+    <ns0:año rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2016</ns0:año>
+    <ns0:periodo>Primavera</ns0:periodo>
+    <ns0:alumno rdf:resource="http://njh.me/216470441"/>
+    <ns0:alumno rdf:resource="http://njh.me/216470442"/>
+    <ns0:alumno rdf:resource="http://njh.me/216470443"/>
+    <ns0:alumno rdf:resource="http://njh.me/216470444"/>
+    <ns0:alumno rdf:resource="http://njh.me/216470445"/>
+    <ns0:alumno rdf:resource="http://njh.me/216470446"/>
+    <ns0:alumno rdf:resource="http://njh.me/216470447"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://njh.me/prope4">
+    <ns0:isTaughtBy rdf:resource="http://njh.me/profe4"/>
+    <ns0:title>Lenguajes formales</ns0:title>
+    <ns0:año rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2016</ns0:año>
+    <ns0:periodo>Primavera</ns0:periodo>
+    <ns0:alumno rdf:resource="http://njh.me/216470441"/>
+    <ns0:alumno rdf:resource="http://njh.me/216470442"/>
+    <ns0:alumno rdf:resource="http://njh.me/216470443"/>
+    <ns0:alumno rdf:resource="http://njh.me/216470444"/>
+    <ns0:alumno rdf:resource="http://njh.me/216470445"/>
+    <ns0:alumno rdf:resource="http://njh.me/216470446"/>
+    <ns0:alumno rdf:resource="http://njh.me/216470447"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://njh.me/profe11">
+    <ns0:name>Miguel Angel Leon</ns0:name>
+    <ns0:title>Doctor</ns0:title>
+    <ns0:area rdf:resource="http://njh.me/area4"/>
+    <ns0:contrato rdf:resource="http://njh.me/personal_admin"/>
+    <ns0:contrato rdf:resource="http://njh.me/personal_docente"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://njh.me/coordinador1">
+    <ns0:coordinador rdf:resource="http://njh.me/profe11"/>
+    <ns0:coordina>maestria</ns0:coordina>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://njh.me/coordinador2">
+    <ns0:coordinador rdf:resource="http://njh.me/profe8"/>
+    <ns0:coordina>Doctorado</ns0:coordina>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://njh.me/secretaria_iyp">
+    <ns0:mail>secretaria_inves_pos@buap.mx</ns0:mail>
+    <ns0:name>Ethelvina Archindia</ns0:name>
+    <ns0:title>Doctor</ns0:title>
+    <ns0:contrato rdf:resource="http://njh.me/personal_admin"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://njh.me/secretaria_p">
+    <ns0:mail>secre_pos@buap.mx</ns0:mail>
+    <ns0:name>Ines </ns0:name>
+    <ns0:title>Licenciatura</ns0:title>
+    <ns0:contrato rdf:resource="http://njh.me/personal_admin"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://njh.me/personal_admin">
+    <ns0:tiene_personal rdf:resource="http://njh.me/secretaria_p"/>
+    <ns0:tiene_personal rdf:resource="http://njh.me/profe11"/>
+    <ns0:tiene_personal rdf:resource="http://njh.me/profe8"/>
+    <ns0:tiene_personal rdf:resource="http://njh.me/secretaria_iyp"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://njh.me/personal_docente">
+    <ns0:tiene_personal rdf:resource="http://njh.me/profe1"/>
+    <ns0:tiene_personal rdf:resource="http://njh.me/profe2"/>
+    <ns0:tiene_personal rdf:resource="http://njh.me/profe3"/>
+    <ns0:tiene_personal rdf:resource="http://njh.me/profe4"/>
+    <ns0:tiene_personal rdf:resource="http://njh.me/profe5"/>
+    <ns0:tiene_personal rdf:resource="http://njh.me/profe6"/>
+    <ns0:tiene_personal rdf:resource="http://njh.me/profe7"/>
+    <ns0:tiene_personal rdf:resource="http://njh.me/profe8"/>
+    <ns0:tiene_personal rdf:resource="http://njh.me/profe9"/>
+    <ns0:tiene_personal rdf:resource="http://njh.me/profe10"/>
+    <ns0:tiene_personal rdf:resource="http://njh.me/profe11"/>
+  </rdf:Description>
+
+</rdf:RDF>
